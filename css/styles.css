@@ -18,6 +18,18 @@ a {
     font-family: 'Fredericka the Great', cursive;
 }
 
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: auto;
+    font-weight: 500;
+    margin: 2rem 0rem;
+}
+h2, h3, h4  {
+    width: auto;
+    padding: 0.5rem;
+    font-size: auto;
+}
+
 ul{list-style: none;}
 
 /***********************/
@@ -121,19 +133,19 @@ hr {border: 1px groove white; background-color: white;}
     padding: .1rem;
 }
 
-/*************************/
-/*   CUERPO PPAL INDEX   */
-/*************************/
+/*****************************/
+/*   CONTENEDOR PPAL INDEX   */
+/*****************************/
 .container {
     margin: auto;
     width: 95%;  
 }
+
+/***** cover *****/
 .cover {
     margin: auto;
     list-style: none;
     height: 95vh;
-    /* display: grid;
-    place-items: center; */
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -210,13 +222,6 @@ hr {border: 1px groove white; background-color: white;}
     justify-content: flex-end;
 }
 
-p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: auto;
-    font-weight: 500;
-    margin: 2rem 0rem;
-
-}
 .btnsm {
     background-color: #3f48cc;
     cursor: pointer;
@@ -224,7 +229,6 @@ p {
     font-weight: bold;
     padding: 0.5rem;
     align-items: center;
-    /* border: 1px solid #0000ff; */
 }
 .btnsm:hover {
     opacity: 2;
@@ -247,7 +251,6 @@ p {
     box-sizing: content-box;
     box-shadow: #CAE9FF 8px 8px;
 }
-
 .grid-cards img, iframe {
     width: 100%;
     height: auto;
@@ -255,11 +258,12 @@ p {
     border-radius: 10px;
     /* border: 1px solid #0000ff; */
 }
-/* .grid-cards h3 {border: 1px solid #0000ff;} */
+.grid-cards h3 {
+
+}
 .grid-cards p {
-    font-family: 'Montserrat', sans-serif;
-    margin-top: 1rem;
-    /* border: 1px solid #0000ff; */
+    margin-top: 0rem;
+    border: 1px solid white;
 }
 
 .grid-cards a:hover {
@@ -303,10 +307,8 @@ p {
 
 /************************* stylestips.html *************************/
 
-.style-header, p,h3, h4, h2  {
+.style-header {
     width: auto;
-    margin: 1rem 0rem;
-    padding: 0.5rem;
 }
 .style-header h1 {
     font-size: 2.5rem;
@@ -317,22 +319,18 @@ p {
 .style-header h2 {
     text-align: left;
     text-transform: capitalize;
-    /* width: auto;
-    margin: 1rem 0rem; */
+    width: auto;
+    margin: 1rem 0rem;
+}
+.style-header h3 {
+    text-align: center;
+    font-weight: bolder;
 }
 .style-header h4 {
-    /* width: auto;
-    margin: 1rem 0rem; */
     animation: typed 3 infinite 0 5 alternate both;
 }
-/* .style-header h3 {
-    width: auto;
-    margin: 1rem 0rem;
-} */
-/* .style-header p {
-    width: auto;
-    margin: 1rem 0rem;
-} */
+
+
 
 /* secciones */
 
@@ -345,12 +343,14 @@ h5 {
     border-radius: 15px;
     margin-top: 2rem;
     padding: 0.5rem 1rem;
+    background-color: rgba(128, 128, 128, 0.103);
 }
 .style_section {
+    background-color: rgba(128, 128, 128, 0.103);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0.5rem 0 1rem 0;
+    margin: 0.2rem 0 1rem 0;
     gap: 0rem;
     border: 1px solid whitesmoke;
     border-radius: 10px;
@@ -668,13 +668,17 @@ h5 {
         transform: rotate(-135deg);
         top: -7px;
     }
+    .ppal p {
+        overflow-x: hidden;
+    } 
 }
 @media only screen and (max-width:400px) {
     .grid-cards {
         grid-template-columns: 1fr;
     }
     .ppal {
-        height: 50vh;
+        height: 60vh;
     }
-
+    
 }
+
