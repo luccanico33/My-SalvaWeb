@@ -19,42 +19,45 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bungee+Hairline&family=Charmonman&family=Dancing+Script:wght@400;700&family=Fredericka+the+Great&family=Indie+Flower&family=Libre+Barcode+128+Text&family=Permanent+Marker&family=Rubik+Glitch&family=Sacramento&family=Sofia&family=Trade+Winds&family=Updock&display=swap" rel="stylesheet">
-    
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Montserrat:wght@100&family=Roboto+Flex:opsz,wght@8..144,200&family=Sofia&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div class="nav-container">
-        <nav class="nav-init" id="initid">
-            <a href="../index.html"><img src="../img/logo1.png" alt="My SalvaWeb logo" class="nav-logo"></a>
-            <ul class="nav-menu" role="menu" id="menuid">
-                <li>
-                    <a href="Stylestips.html">Style's Tips</a>
-                </li>
-                <li>
-                    <a href="../games/games.html">juegos</a>
-                </li>
-                <li>
-                    <a href="../vsc/tipsVSCode.html">tips para VSCode</a>
-                </li>
-                <li>
-                    <a href="x">otros...</a>
-                </li>
-                <li>
-                    <a href="x">Contactanos</a>
-                </li>
-            </ul>
-            <ul class="nav-search">
-                <input type="text" placeholder="Search Here..." class="search-input">
-                <a href="#" class="search-btn">
-                    <i class="fas fa-search"></i>
-                </a>
-            </ul>
-            <buttton id="btn-mobile" aria-label="Abrir menu" aria-haspopup="true" aria-controls="menuid" aria-expanded="false">
-                <span id="hambuguer"></span>
-            </buttton>
-        </nav>
-        <hr>
+    <!-- barra de menu -->
+    <nav class="nav-init" id="initid">
+        <a href="../index.html"><img src="../img/logo1.png" alt="My SalvaWeb logo" class="nav-logo"></a>
+        <ul class="nav-menu" role="menu" id="menuid">
+            <li>
+                <a href="Stylestips.html">Style's Tips</a>
+            </li>
+            <li>
+                <a href="../games/games.html">juegos</a>
+            </li>
+            <li>
+                <a href="../vsc/tipsVSCode.html">tips para VSCode</a>
+            </li>
+            <li>
+                <a href="x">otros...</a>
+            </li>
+            <li>
+                <a href="../contacto.html">Contactanos</a>
+            </li>
+        </ul>
+        <ul class="nav-search">
+            <input type="text" placeholder="Search Here..." class="search-input">
+            <a href="#" class="search-btn">
+                <i class="fas fa-search"></i>
+            </a>
+        </ul>
+        <buttton id="btn-mobile" aria-label="Abrir menu" aria-haspopup="true" aria-controls="menuid" aria-expanded="false">
+            <span id="hambuguer"></span>
+        </buttton>
+    </nav>
+    <hr>
+
+    <!-- cuerpo de pagina -->
+    <div class="container" id="stylestips">
         <header class="style-header">
             <h1>The Web Design's Stylestips</h1>
             <h2> queres frontear con estilo  esa vieja pagina??</h2>
@@ -62,28 +65,300 @@
             <h3>queres chusmear como se hace tal o cual cosa? queres ver que onda tal efecto y como quedaria si lo incorporaras a tu web??</h3>
             <p>en esta seccion vas a encontrar todo sobre como darle vida a ese aburrido html!!! Es simple entras al que te gusta clickeando y veras el efecto deseado y su codigo para q puedas incorporarlo facilmente a tu diseño.</p> 
         </header>
-        <section class="grid-cards">
-            <div >
-                <img src="img/card1.jpg" alt="card1">
-                <a href="#" class="btnsm"></a>
+        <h5>botones</h5>
+        <section class="style_section">    
+            <div class="styleTipsCard">
+                <div class="imgbx">
+                    <button id="btn_analog">boton analog!</button>
+                </div>
+                <div class="details">
+                    <h6>boton tipo analog</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, reiciendis sapiente enim quae voluptatum nulla santiago gato!</p>
+                    <a href="#" class="btnsm"><i class="fas fa-angles-right"></i> Mas info <i class="fas fa-angle-double-left"></i></a>
+                </div>
+            </div><div class="styleTipsCard">
+                <div class="imgbx">
+                    <button id="btn_analog">boton 2!</button>
+                </div>
+                <div class="details">
+                    <h6>boton tipo analog</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, reiciendis sapiente enim quae voluptatum nulla santiago gato!</p>
+                    <a href="#" class="btnsm"><i class="fas fa-angles-right"></i> Mas info <i class="fas fa-angle-double-left"></i></a>
+                </div>
+            </div><div class="styleTipsCard">
+                <div class="imgbx">
+                    <button id="btn_analog">boton 3!</button>
+                </div>
+                <div class="details">
+                    <h6>boton tipo analog</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, reiciendis sapiente enim quae voluptatum nulla santiago gato!</p>
+                    <a href="#" class="btnsm"><i class="fas fa-angles-right"></i> Mas info <i class="fas fa-angle-double-left"></i></a>
+                </div>
+            </div><div class="styleTipsCard">
+                <div class="imgbx">
+                    <button id="btn_analog">boton 4!</button>
+                </div>
+                <div class="details">
+                    <h6>boton tipo analog</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, reiciendis sapiente enim quae voluptatum nulla santiago gato!</p>
+                    <a href="#" class="btnsm"><i class="fas fa-angles-right"></i> Mas info <i class="fas fa-angle-double-left"></i></a>
+                </div>
+            </div><div class="styleTipsCard">
+                <div class="imgbx">
+                    <button id="btn_analog">boton 5!</button>
+                </div>
+                <div class="details">
+                    <h6>boton tipo analog</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, reiciendis sapiente enim quae voluptatum nulla santiago gato!</p>
+                    <a href="#" class="btnsm"><i class="fas fa-angles-right"></i> Mas info <i class="fas fa-angle-double-left"></i></a>
+                </div>
+            </div><div class="styleTipsCard">
+                <div class="imgbx">
+                    <button id="btn_analog">boton 6!</button>
+                </div>
+                <div class="details">
+                    <h6>boton tipo analog</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, reiciendis sapiente enim quae voluptatum nulla santiago gato!</p>
+                    <a href="#" class="btnsm"><i class="fas fa-angles-right"></i> Mas info <i class="fas fa-angle-double-left"></i></a>
+                </div>
+            </div><div class="styleTipsCard">
+                <div class="imgbx">
+                    <button id="btn_analog">boton 7!</button>
+                </div>
+                <div class="details">
+                    <h6>boton tipo analog</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, reiciendis sapiente enim quae voluptatum nulla santiago gato!</p>
+                    <a href="#" class="btnsm"><i class="fas fa-angles-right"></i> Mas info <i class="fas fa-angle-double-left"></i></a>
+                </div>
+            </div><div class="styleTipsCard">
+                <div class="imgbx">
+                    <button id="btn_analog">boton 8!</button>
+                </div>
+                <div class="details">
+                    <h6>boton tipo analog</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, reiciendis sapiente enim quae voluptatum nulla santiago gato!</p>
+                    <a href="#" class="btnsm"><i class="fas fa-angles-right"></i> Mas info <i class="fas fa-angle-double-left"></i></a>
+                </div>
+            </div><div class="styleTipsCard">
+                <div class="imgbx">
+                    <button id="btn_analog">boton 9!</button>
+                </div>
+                <div class="details">
+                    <h6>boton tipo analog</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, reiciendis sapiente enim quae voluptatum nulla santiago gato!</p>
+                    <a href="#" class="btnsm"><i class="fas fa-angles-right"></i> Mas info <i class="fas fa-angle-double-left"></i></a>
+                </div>
+            </div><div class="styleTipsCard">
+                <div class="imgbx">
+                    <button id="btn_analog">boton 10!</button>
+                </div>
+                <div class="details">
+                    <h6>boton tipo analog</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, reiciendis sapiente enim quae voluptatum nulla santiago gato!</p>
+                    <a href="#" class="btnsm"><i class="fas fa-angles-right"></i> Mas info <i class="fas fa-angle-double-left"></i></a>
+                </div>
             </div>
-            <div>
-                <img src="img/card2.jpg" alt="card2">
-                <h3>Lorem ipsum dolor sit amet.</h3>
-                <a href="#" class="btnsm"><i class="fas fa-angles-right"></i> Mas info <i class="fas fa-angle-double-left"></i></a>
+        </section>
+        <h5>cards</h5>
+        <section class="style_section">    
+            <div class="styleTipsCard">
+                <div class="imgbx">
+                    <button id="btn_analog">boton analog!</button>
+                </div>
+                <div class="details">
+                    <h6>boton tipo analog</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, reiciendis sapiente enim quae voluptatum nulla santiago gato!</p>
+                    <a href="#" class="btnsm"><i class="fas fa-angles-right"></i> Mas info <i class="fas fa-angle-double-left"></i></a>
+                </div>
             </div>
-            <div>
-                <img src="img/card3.jpg" alt="card3">
-                <h3>Lorem ipsum dolor sit amet.</h3>
-                <a href="#" class="btnsm"><i class="fas fa-angles-right"></i> Mas info <i class="fas fa-angle-double-left"></i></a>
+            <div class="styleTipsCard">
+                <div class="imgbx">
+                    <button id="btn_analog">boton 2!</button>
+                </div>
+                <div class="details">
+                    <h6>boton tipo analog</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, reiciendis sapiente enim quae voluptatum nulla santiago gato!</p>
+                    <a href="#" class="btnsm"><i class="fas fa-angles-right"></i> Mas info <i class="fas fa-angle-double-left"></i></a>
+                </div>
             </div>
-            <div>
-                <img src="img/card4.jpg" alt="card4">
-                <h3>Lorem ipsum dolor sit amet.</h3>
-                <a href="#" class="btnsm"><i class="fas fa-angles-right"></i> Mas info <i class="fas fa-angle-double-left"></i></a>
+            <div class="styleTipsCard">
+                <div class="imgbx">
+                    <button id="btn_analog">boton 3!</button>
+                </div>
+                <div class="details">
+                    <h6>boton tipo analog</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, reiciendis sapiente enim quae voluptatum nulla santiago gato!</p>
+                    <a href="#" class="btnsm"><i class="fas fa-angles-right"></i> Mas info <i class="fas fa-angle-double-left"></i></a>
+                </div>
+            </div>
+            <div class="styleTipsCard">
+                <div class="imgbx">
+                    <button id="btn_analog">boton 4!</button>
+                </div>
+                <div class="details">
+                    <h6>boton tipo analog</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, reiciendis sapiente enim quae voluptatum nulla santiago gato!</p>
+                    <a href="#" class="btnsm"><i class="fas fa-angles-right"></i> Mas info <i class="fas fa-angle-double-left"></i></a>
+                </div>
+            </div>
+        </section>
+        <h5>menues</h5>
+        <section class="style_section">    
+            <div class="styleTipsCard">
+                <div class="imgbx">
+                    <button id="btn_analog">boton analog!</button>
+                </div>
+                <div class="details">
+                    <h6>boton tipo analog</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, reiciendis sapiente enim quae voluptatum nulla santiago gato!</p>
+                    <a href="#" class="btnsm"><i class="fas fa-angles-right"></i> Mas info <i class="fas fa-angle-double-left"></i></a>
+                </div>
+            </div>
+            <div class="styleTipsCard">
+                <div class="imgbx">
+                    <button id="btn_analog">boton 2!</button>
+                </div>
+                <div class="details">
+                    <h6>boton tipo analog</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, reiciendis sapiente enim quae voluptatum nulla santiago gato!</p>
+                    <a href="#" class="btnsm"><i class="fas fa-angles-right"></i> Mas info <i class="fas fa-angle-double-left"></i></a>
+                </div>
+            </div>
+            <div class="styleTipsCard">
+                <div class="imgbx">
+                    <button id="btn_analog">boton 3!</button>
+                </div>
+                <div class="details">
+                    <h6>boton tipo analog</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, reiciendis sapiente enim quae voluptatum nulla santiago gato!</p>
+                    <a href="#" class="btnsm"><i class="fas fa-angles-right"></i> Mas info <i class="fas fa-angle-double-left"></i></a>
+                </div>
+            </div>
+            <div class="styleTipsCard">
+                <div class="imgbx">
+                    <button id="btn_analog">boton 4!</button>
+                </div>
+                <div class="details">
+                    <h6>boton tipo analog</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, reiciendis sapiente enim quae voluptatum nulla santiago gato!</p>
+                    <a href="#" class="btnsm"><i class="fas fa-angles-right"></i> Mas info <i class="fas fa-angle-double-left"></i></a>
+                </div>
+            </div>
+        </section>
+        <h5>redes</h5>
+        <section class="style_section">    
+            <div class="styleTipsCard">
+                <div class="imgbx">
+                    <div id="box-share">
+                        <div class="share-button">
+                          <span><i class="fas fa-share-alt"></i>&nbsp; Share!</span>
+                          <a href="#" 
+                             onclick="window.open('#', 'popup', 'width=380,height=520', 'scrollbars=no', 'resizable=no'); return false;" 
+                             target="popup"><i class="fab fa-facebook"></i>
+                          </a>
+                      
+                          <a href="#" 
+                             onclick="window.open('#', 'popup', 'width=380,height=520', 'scrollbars=no', 'resizable=no'); return false;" 
+                      target="popup"><i class="fab fa-twitter"></i>
+                          </a>
+                          <a href="#"><i class="fab fa-instagram"></i></a>
+                          <a href="#" 
+                      onclick="window.open('#', 'popup','width=380,height=520','scrollbars=no','resizable=no'); return false;" 
+                      target="popup"><i class="fab fa-linkedin-in"></i></a>
+                          <a href="#" 
+                      onclick="window.open('#', 'popup','width=380,height=520','scrollbars=no','resizable=no'); return false;" 
+                      target="popup"><i class="fab fa-pinterest"></i></a>
+                          <a href="#" 
+                      onclick="window.open('#', 'popup','width=380,height=520','scrollbars=no','resizable=no'); return false;" 
+                      target="popup"><i class="fas fa-envelope"></i></a>    
+                        </div>
+                      </div>
+                </div>
+                <div class="details">
+                    <h6>Social Media Share Button with Pop-up</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, reiciendis sapiente enim quae voluptatum nulla santiago gato!</p>
+                    <a href="#" class="btnsm"><i class="fas fa-angles-right"></i> Mas info <i class="fas fa-angle-double-left"></i></a>
+                </div>
+            </div>
+            <div class="styleTipsCard">
+                <div class="imgbx">
+                    <button id="btn_analog">boton 2!</button>
+                </div>
+                <div class="details">
+                    <h6>boton tipo analog</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, reiciendis sapiente enim quae voluptatum nulla santiago gato!</p>
+                    <a href="#" class="btnsm"><i class="fas fa-angles-right"></i> Mas info <i class="fas fa-angle-double-left"></i></a>
+                </div>
+            </div>
+            <div class="styleTipsCard">
+                <div class="imgbx">
+                    <button id="btn_analog">boton 3!</button>
+                </div>
+                <div class="details">
+                    <h6>boton tipo analog</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, reiciendis sapiente enim quae voluptatum nulla santiago gato!</p>
+                    <a href="#" class="btnsm"><i class="fas fa-angles-right"></i> Mas info <i class="fas fa-angle-double-left"></i></a>
+                </div>
+            </div>
+            <div class="styleTipsCard">
+                <div class="imgbx">
+                    <button id="btn_analog">boton 4!</button>
+                </div>
+                <div class="details">
+                    <h6>boton tipo analog</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, reiciendis sapiente enim quae voluptatum nulla santiago gato!</p>
+                    <a href="#" class="btnsm"><i class="fas fa-angles-right"></i> Mas info <i class="fas fa-angle-double-left"></i></a>
+                </div>
+            </div>
+        </section>
+        <h5>otros</h5>
+        <section class="style_section">    
+            <div class="styleTipsCard">
+                <div class="imgbx">
+                    <button id="btn_analog">boton analog!</button>
+                </div>
+                <div class="details">
+                    <h6>boton tipo analog</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, reiciendis sapiente enim quae voluptatum nulla santiago gato!</p>
+                    <a href="#" class="btnsm"><i class="fas fa-angles-right"></i> Mas info <i class="fas fa-angle-double-left"></i></a>
+                </div>
+            </div>
+            <div class="styleTipsCard">
+                <div class="imgbx">
+                    <button id="btn_analog">boton 2!</button>
+                </div>
+                <div class="details">
+                    <h6>boton tipo analog</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, reiciendis sapiente enim quae voluptatum nulla santiago gato!</p>
+                    <a href="#" class="btnsm"><i class="fas fa-angles-right"></i> Mas info <i class="fas fa-angle-double-left"></i></a>
+                </div>
+            </div>
+            <div class="styleTipsCard">
+                <div class="imgbx">
+                    <button id="btn_analog">boton 3!</button>
+                </div>
+                <div class="details">
+                    <h6>boton tipo analog</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, reiciendis sapiente enim quae voluptatum nulla santiago gato!</p>
+                    <a href="#" class="btnsm"><i class="fas fa-angles-right"></i> Mas info <i class="fas fa-angle-double-left"></i></a>
+                </div>
+            </div>
+            <div class="styleTipsCard">
+                <div class="imgbx">
+                    <button id="btn_analog">boton 4!</button>
+                </div>
+                <div class="details">
+                    <h6>boton tipo analog</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, reiciendis sapiente enim quae voluptatum nulla santiago gato!</p>
+                    <a href="#" class="btnsm"><i class="fas fa-angles-right"></i> Mas info <i class="fas fa-angle-double-left"></i></a>
+                </div>
             </div>
         </section>
         
+    </div>
+
+    <!-- pie de pagina -->
+    <footer class="foot_cont" id="footer">
         <section class="redes">
             <h3>Follow Us</h3>
             <div class="links">
@@ -93,14 +368,13 @@
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
             </div>
         </section>
-    </div>
-    <div class="foot">
-        <footer class="copy-foot">
+        <div class="copy-foot">
             <h4>Copyright <i class="fa-regular fa-copyright"></i> 2022 - LuccaDev - All Right Reserved
             </h4>
-        </footer>
-    </div>
-    <!-- javascripts -->
+        </div>
+    </footer>
+      
+    <!-- javascripts -->  
     <script src="../js/misScripts.js"></script>
 </body>
 </html>

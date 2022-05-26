@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My SalvaWeb</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="icons/site.webmanifest">
+    <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ff0000">
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Montserrat:wght@100&family=Roboto+Flex:opsz,wght@8..144,200&family=Sofia&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- barra de menu -->
+    <nav class="nav-init" id="initid">
+        <a href="index.html"><img src="img/logo1.png" alt="My SalvaWeb logo" class="nav-logo"></a>
+        <ul class="nav-menu" role="menu" id="menuid">
+            <li>
+                <a href="stylestips/Stylestips.html">Style's Tips</a>
+            </li>
+            <li>
+                <a href="games/games.html">juegos</a>
+            </li>
+            <li>
+                <a href="vsc/tipsVSCode.html">VSCode's Tips</a>
+            </li>
+            <li>
+                <a href="x">otros...</a>
+            </li>
+            <li>
+                <a href="x">Contactanos</a>
+            </li>
+        </ul>
+        <ul class="nav-search">
+            <input type="text" placeholder="Search Here..." class="search-input">
+            <a href="#" class="search-btn">
+                <i class="fas fa-search"></i>
+            </a>
+        </ul>
+        <buttton id="btn-mobile" aria-label="Abrir menu" aria-haspopup="true" aria-controls="menuid" aria-expanded="false">
+            <span id="hambuguer"></span>
+        </buttton>
+    </nav>
+    <hr>
+    
+    <!-- cuerpo de pagina -->
+    <div class="container" id="index">
+        <header class="style-header">
+            <h1>Contactanos</h1>
+            <h3 class="contacttext"> dejanos tu consulta, dudas o el contenido que te gustaria que agreguemos pronto</h3>
+        </header>
+        
+        <form action="" class="formulario" name="formulario">
+            <input type="text" name="nombre" id="nombre" class="form-input">
+            <label for="" class="form-label">Nombre/s*</label>
+            <input type="text" name="apellido" id="apellido" class="form-input">
+            <label for="" class="form-label">Apellido/s*</label>
+            <input type="text" name="telefono" id="telefono" class="form-input">
+            <label for="" class="form-label">Telefono de Contacto*</label>
+            <input type="email" name="email" id="email" class="form-input">
+            <label for="" class="form-label">Correo Electrónico*</label>
+            <textarea name="mensaje" id="mensaje" class="form-input" cols="30" rows="10"></textarea>
+            <label for="" class="form-labelmsg">Mensaje*</label>
+            <input type="submit" class="form-submit" id="btn-enviar" />
+        </form>    
+
+            
+        
+    </div>
+    
+    <!-- pie de pagina -->
+    <footer class="foot_cont" id="footer">
+        <section class="redes">
+            <h3>Follow Us</h3>
+            <div class="links">
+                <a href="#">
+                    <i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </section>
+        <div class="copy-foot">
+            <h4>Copyright <i class="fa-regular fa-copyright"></i> 2022 - LuccaDev - All Right Reserved
+            </h4>
+        </div>
+    </footer>
+
+    <!-- contacto -->
+      
+    <!-- javascripts -->  
+    <script src="./js/misScripts.js"></script>
+</body>
+</html>
