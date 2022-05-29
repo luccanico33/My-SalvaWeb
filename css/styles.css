@@ -153,12 +153,13 @@ hr {border: 1px groove white; background-color: white;}
     color: transparent;
 }
 .typing_title1 {
+    margin-top: 1rem;
     width: 13ch;
     animation: typing 3s steps(13, end) forwards, blink .3s 12 backwards alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 5px solid transparent;
-    font-size: 9vw;
+    font-size: 7vw;
 }
 .typing_title2 {
     width: 11ch;
@@ -167,7 +168,7 @@ hr {border: 1px groove white; background-color: white;}
     white-space: nowrap;
     overflow: hidden;
     border-right: 5px solid transparent;
-    font-size: 12vw;
+    font-size: 11vw;
     
 }
 .typing_title3 {
@@ -180,7 +181,7 @@ hr {border: 1px groove white; background-color: white;}
     white-space: nowrap;
     overflow: hidden;
     border-right: 5px solid transparent;
-    font-size: 6vw;
+    font-size: 5vw;
 }
 .typing_title4 {
     width: 1ch;
@@ -195,6 +196,7 @@ hr {border: 1px groove white; background-color: white;}
     -o-transform: rotate(90deg);
     font-size: 20vw;
     margin: 0;
+    margin-bottom: -8%;
     padding: 0;
 
 }
