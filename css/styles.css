@@ -256,14 +256,12 @@ hr {border: 1px groove white; background-color: white;}
     height: auto;
     margin-bottom: 1rem;
     border-radius: 10px;
-    /* border: 1px solid #0000ff; */
 }
 .grid-cards h3 {
 
 }
 .grid-cards p {
-    margin-top: 0rem;
-    border: 1px solid white;
+    margin: 0rem 0.5rem;
 }
 
 .grid-cards a:hover {
@@ -571,6 +569,22 @@ h5 {
 .fijarmsg {margin-top: -16rem;}
 
 
+/******** Technical Problem ********/
+
+#problem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 1rem;
+    border-radius: 10px;
+}
+
+#problem img {
+    margin: auto;
+    border-radius: 10px;
+}
+
 
 /*****************/
 /* MEDIA QUERIES */
@@ -598,13 +612,17 @@ h5 {
         display: block;
     }
     .nav-menu {
+        margin: 2px 0 0 0;
         position: absolute;
-        display: block;
-        width: 1px;
-        top: 2rem;
-        left: -8%;
+        display: flex;
+        width: 0px;
+        height: 0px;
+        top: 4rem;
+        left: -2.5%;
         text-align: center;
-        height: 1px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
         z-index: 1000;
         transition: .6s;
         visibility: hidden;
@@ -617,17 +635,19 @@ h5 {
     /*  */
 
     .nav-init.active #menuid {
-        display: block;
         visibility: visible;
-        height: 100vh;
-        width: 75vw;
+        height: calc(100vh - 4rem);
+        width: calc(100vw + 2.5%);
         overflow-y: auto;
         overflow-x: auto;
     }
-    #menuid li {
-        margin: 0.7rem;
-        padding: 0.7rem;
-
+    .nav-init.active #menuid li {
+        width: 100%;
+        /* height: auto; */
+        margin: 0;
+        padding: 1rem;
+        border-bottom: 5px solid white;
+        font-size: 100%;
     }
 
     #btn-mobile {
@@ -671,6 +691,15 @@ h5 {
     .ppal p {
         overflow-x: hidden;
     } 
+
+    #problem {
+        width: 100%;
+        height: auto;
+    }
+    #problem img {
+        width: 95%;
+        height: auto;
+    }
 }
 @media only screen and (max-width:400px) {
     .grid-cards {
