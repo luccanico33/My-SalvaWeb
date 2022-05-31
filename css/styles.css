@@ -219,6 +219,7 @@ hr {border: 1px groove white; background-color: white;}
     background: url("../img/ppal.jpg") no-repeat center center/cover;
     padding: 2rem;
     margin: auto;
+    margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -232,6 +233,9 @@ hr {border: 1px groove white; background-color: white;}
     font-weight: bold;
     padding: 0.5rem;
     align-items: center;
+    box-shadow: 0 0 15px 1px rgba(128, 128, 128, 0.5);
+    border: rgba(127, 255, 212, 0.514) 1px solid;
+    border-radius: 100px;
 }
 .btnsm:hover {
     opacity: 2;
@@ -248,20 +252,34 @@ hr {border: 1px groove white; background-color: white;}
     margin: 1rem 0px;
     gap: 1rem;
 }
-.grid-cards div {
+.card {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-between;
     border: 1px solid #3f48cc;
     border-radius: 10px;
-    box-sizing: content-box;
-    box-shadow: #CAE9FF 8px 8px;
+    box-shadow: 0 0 10px 1px rgba(128, 128, 128, 0.3);
+    background-color: rgba(132, 255, 255, 0.103);
 }
-.grid-cards img, iframe {
+.card img, iframe {
     width: 100%;
     height: auto;
     margin-bottom: 1rem;
     border-radius: 10px;
 }
-.grid-cards p {
+.card h3 {
+    align-content: flex-end;
+}
+.card p {
     margin: 0rem 0.5rem;
+    align-content: flex-end;
+}
+.card .btnsm {
+    margin: 0.5rem;
+    justify-items: flex-end;
+    align-self: center;
+    align-content: flex-end;
 }
 
 .grid-cards a:hover {
@@ -307,7 +325,16 @@ hr {border: 1px groove white; background-color: white;}
 
 .style-header {
     width: auto;
+    max-width: 90%;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    box-shadow: 0 0 20px 1px rgba(128, 128, 128, 0.4);
+    background-color: rgba(128, 128, 128, 0.103);
+    position: relative;
+    border: rgba(127, 255, 212, 0.514) 1px solid;
+    border-radius: 1rem;
 }
+
 .style-header h1 {
     font-size: 2.5rem;
     text-align: center;
@@ -321,7 +348,7 @@ hr {border: 1px groove white; background-color: white;}
     margin: 1rem 0rem;
 }
 .style-header h3 {
-    text-align: center;
+    text-align: left;
     font-weight: bolder;
 }
 .style-header h4 {
@@ -608,13 +635,32 @@ h5 {
     align-items: center;
     margin: auto;
     margin-top: 1rem;
-    border-radius: 10px;
+    
+    
 }
 
 #problem img {
     margin: auto;
-    border-radius: 10px;
+    border-radius: 100px 0px 10px 10px;
+    animation: pulse 1.2s ease infinite alternate-reverse;
+    box-shadow: 0 0 50px 15px rgba(122, 253, 236, 0.5);
 }
+@keyframes pulse {
+    25% {
+        box-shadow: 50 50 10px 15px rgba(122, 253, 236, 0.3);
+        border-radius: 10px 10px 0px 150px;
+    }
+    50% {
+        box-shadow: 0 0 30px 15px rgba(122, 253, 236, 0.2);
+        border-radius: 0px 300px 10px 10px;
+    }
+    75% {
+        box-shadow: 0 0 70px 15px rgba(122, 253, 236, 0.3);
+        border-radius: 10px 10px 200px 0px;
+    }
+    
+}
+@keyframes scrolldown {50% {color: white;}}
 
 
 /*****************/
