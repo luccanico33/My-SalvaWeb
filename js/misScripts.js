@@ -38,14 +38,14 @@ for (var i = 0; i < inputs.length; i++) {
     });
 }
 
-ScrollReveal().reveal('.ppal',{delay: 500});
-ScrollReveal().reveal('.grid-cards',{delay: 500});
-ScrollReveal().reveal('.foot_cont',{delay: 500});
-ScrollReveal().reveal('.style_section',{delay: 500});
-ScrollReveal().reveal('.titulo_boton',{delay: 500});
-ScrollReveal().reveal('.ppal',{delay: 500});
-ScrollReveal().reveal('.ppal',{delay: 500});
-ScrollReveal().reveal('.ppal',{delay: 500});
+ScrollReveal().reveal('.ppal',{delay: 400});
+ScrollReveal().reveal('.grid-cards',{delay: 400});
+ScrollReveal().reveal('.foot_cont',{delay: 400});
+ScrollReveal().reveal('.style_section',{delay: 400});
+ScrollReveal().reveal('.titulo_boton',{delay: 400});
+ScrollReveal().reveal('.grid-cards-games',{delay: 400});
+ScrollReveal().reveal('.grid-cards',{delay: 400});
+ScrollReveal().reveal('.card',{delay: 400});
 
 
 
