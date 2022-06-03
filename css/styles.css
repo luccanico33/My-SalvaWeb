@@ -22,7 +22,7 @@ p {
     font-family: 'Montserrat', sans-serif;
     font-size: auto;
     font-weight: 500;
-    margin: 2rem 0rem;
+    margin: 1rem 0;
 }
 h2, h3, h4  {
     width: auto;
@@ -345,10 +345,10 @@ img, iframe {
     text-align: left;
     text-transform: capitalize;
     width: auto;
-    margin: 1rem 0rem;
+    margin: 0;
+    margin-top: 1rem;
 }
 .style-header h3 {
-    text-align: left;
     font-weight: bolder;
 }
 .style-header h4 {
@@ -521,7 +521,7 @@ h5 {
 /****** contactenos ******/
 
 .contacttext {
-    
+    text-align: center;
     margin: auto;
     padding: 1rem;
 }
@@ -601,8 +601,19 @@ h5 {
 .grid-cards-games {
     display: grid;
     grid-template-columns: 1fr;
-    margin: 1rem 0px;
-    gap: 1rem;
+    width: 75vmax;
+    margin: auto;
+    gap: 2rem;
+}
+.grid-cards-games .card p {
+    margin: 0.5rem 1rem;
+}
+.grid-cards-games .card ul li {
+    margin: 0;
+    padding-left: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: auto;
+    font-weight: 500;
 }
 
 
@@ -649,6 +660,9 @@ h5 {
 @media only screen and (max-width: 800px) {
     .grid-cards {
         grid-template-columns: 1fr 1fr;
+    }
+    .grid-cards-games {
+        width: 95%;
     }
     .nav-init {
         align-items: center;
